@@ -1,0 +1,35 @@
+/* Masque la scrollbar par défaut */
+::-webkit-scrollbar {
+    width: 8px;
+    opacity: 0;
+}
+
+/* Apparition lors du survol */
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-secondary);
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.9);
+    border-radius: 4px;
+}
+
+/* Apparition seulement en défilement */
+html:hover ::-webkit-scrollbar-thumb {
+    background-color: var(--color-secondary);
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* Firefox */
+* {
+    @supports (scrollbar-width: thin) {
+        scrollbar-width: thin;
+    }
+}
+
+@supports (scrollbar-color: transparent transparent) {
+    * {
+        scrollbar-color: transparent transparent;
+
+        &:hover {
+            scrollbar-color: var(--color-secondary) transparent;
+        }
+    }
+}

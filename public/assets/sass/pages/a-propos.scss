@@ -1,0 +1,67 @@
+#p-propos {
+    .accordion {
+        .accordion-item {
+            border: none;
+            margin-bottom: 2rem;
+            background-color: transparent;
+
+            .accordion-header {
+                @include h3;
+                border-radius: 40px 40px 0 0;
+
+                @media (prefers-color-scheme: dark) {
+                    background: #0a0f1b;
+                }
+
+                @media (prefers-color-scheme: light) {
+                    background: #bdb8a7;
+                }
+
+                .accordion-button {
+                    box-shadow: none;
+                    border-bottom: 2px solid #0a0f1b;
+
+                    &:not(.collapsed) {
+                        background-color: #0a0f1b;
+                    }
+
+                    &.collapsed {
+                        @media (prefers-color-scheme: dark) {
+                            background-color: black;
+                        }
+        
+                        @media (prefers-color-scheme: light) {
+                            background-color: #576485;
+                        }
+                    }
+                }
+            }
+
+            .accordion-body {
+                @media (prefers-color-scheme: dark) {
+                    background: #1f2c4e;
+                    color: white
+                }
+
+                @media (prefers-color-scheme: light) {
+                    background: #a6bfff;
+                    color: black;
+                }
+
+                border-left: 4px solid #0a0f1b;
+
+                h5 {
+                    margin-bottom: .4rem;
+                }
+
+                p {
+                    text-align: justify;
+
+                    +h5 {
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+[18-Mar-2025 17:25:07 UTC] PHP Fatal error:  Uncaught Error: Class "Filament\FilamentServiceProvider" not found in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:961
+Stack trace:
+#0 /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(893): Illuminate\Foundation\Application->resolveProvider()
+#1 /home/hdct5389/hydaria.fr/bootstrap/app.php(44): Illuminate\Foundation\Application->register()
+#2 /home/hdct5389/hydaria.fr/artisan(20): require_once('/home/hdct5389/...')
+#3 {main}
+  thrown in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 961
+[18-Mar-2025 17:25:56 UTC] PHP Fatal error:  Uncaught Error: Class "Filament\FilamentServiceProvider" not found in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:961
+Stack trace:
+#0 /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(893): Illuminate\Foundation\Application->resolveProvider()
+#1 /home/hdct5389/hydaria.fr/bootstrap/app.php(44): Illuminate\Foundation\Application->register()
+#2 /home/hdct5389/hydaria.fr/artisan(20): require_once('/home/hdct5389/...')
+#3 {main}
+  thrown in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 961
+[18-Mar-2025 17:26:20 UTC] PHP Fatal error:  Uncaught Error: Class "Filament\FilamentServiceProvider" not found in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:961
+Stack trace:
+#0 /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(893): Illuminate\Foundation\Application->resolveProvider()
+#1 /home/hdct5389/hydaria.fr/bootstrap/app.php(44): Illuminate\Foundation\Application->register()
+#2 /home/hdct5389/hydaria.fr/artisan(20): require_once('/home/hdct5389/...')
+#3 {main}
+  thrown in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 961
+[18-Mar-2025 17:26:43 UTC] PHP Fatal error:  Uncaught Error: Class "Filament\FilamentServiceProvider" not found in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:961
+Stack trace:
+#0 /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(893): Illuminate\Foundation\Application->resolveProvider()
+#1 /home/hdct5389/hydaria.fr/bootstrap/app.php(44): Illuminate\Foundation\Application->register()
+#2 /home/hdct5389/hydaria.fr/artisan(20): require_once('/home/hdct5389/...')
+#3 {main}
+  thrown in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 961
+[18-Mar-2025 17:27:38 UTC] PHP Fatal error:  Uncaught Error: Class "Filament\FilamentServiceProvider" not found in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:961
+Stack trace:
+#0 /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(893): Illuminate\Foundation\Application->resolveProvider()
+#1 /home/hdct5389/hydaria.fr/bootstrap/app.php(44): Illuminate\Foundation\Application->register()
+#2 /home/hdct5389/hydaria.fr/artisan(20): require_once('/home/hdct5389/...')
+#3 {main}
+  thrown in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 961
+[18-Mar-2025 17:29:11 UTC] PHP Fatal error:  Uncaught Error: Class "Filament\FilamentServiceProvider" not found in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:961
+Stack trace:
+#0 /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(893): Illuminate\Foundation\Application->resolveProvider()
+#1 /home/hdct5389/hydaria.fr/bootstrap/app.php(44): Illuminate\Foundation\Application->register()
+#2 /home/hdct5389/hydaria.fr/artisan(20): require_once('/home/hdct5389/...')
+#3 {main}
+  thrown in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 961
+[18-Mar-2025 17:29:23 UTC] PHP Fatal error:  Uncaught Error: Class "Filament\FilamentServiceProvider" not found in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:961
+Stack trace:
+#0 /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(893): Illuminate\Foundation\Application->resolveProvider()
+#1 /home/hdct5389/hydaria.fr/bootstrap/app.php(44): Illuminate\Foundation\Application->register()
+#2 /home/hdct5389/hydaria.fr/artisan(20): require_once('/home/hdct5389/...')
+#3 {main}
+  thrown in /home/hdct5389/hydaria.fr/vendor/laravel/framework/src/Illuminate/Foundation/Application.php on line 961

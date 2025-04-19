@@ -1,0 +1,28 @@
+#p-mentions-legales {
+    .title {
+        padding-bottom: 2rem;
+
+        h1 {
+            text-align: center;
+            font-size: 4rem;
+            text-shadow: 0 6px 0 black;
+        }
+
+        h2 {
+            color: var(--color-accent);
+            text-align: center;
+            text-shadow: 0 6px 0 black;
+        }
+    }
+
+    @include h3;
+
+    p {
+        text-align: justify;
+        padding-bottom: 0.6rem;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}

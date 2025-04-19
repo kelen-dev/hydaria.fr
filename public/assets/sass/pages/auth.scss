@@ -1,0 +1,58 @@
+#auth {
+    @media (prefers-color-scheme: dark) {
+        color: white;
+        background-color: var(--background-color);
+    }
+
+    @media (prefers-color-scheme: light) {
+        color: black;
+        background-color: var(--light-background-color);
+    }
+
+    .container {
+        margin: 0 auto;
+
+        .user-box {
+            position: relative;
+
+            input {
+                width: 100%;
+                padding: 10px 0;
+                font-size: 16px;
+                color: white;
+                margin-bottom: 30px;
+                border: none;
+                border-bottom: 1px solid white;
+                outline: none;
+                background: transparent;
+
+                &:focus~,
+                &:valid~ {
+                    label {
+                        top: -20px;
+                        left: 0;
+                        color: var(--color-primary);
+                        font-size: 12px;
+                    }
+                }
+
+                .form-control {
+                    &:focus {
+                        border-color: transparent !important;
+                    }
+                }
+            }
+
+            label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 10px 0;
+                font-size: 16px;
+                color: white;
+                pointer-events: none;
+                transition: .5s;
+            }
+        }
+    }
+}

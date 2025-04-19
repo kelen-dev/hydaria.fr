@@ -1,0 +1,138 @@
+/* ==========================================================================
+    Discord:
+========================================================================== */
+#discord_widget {
+    display: flex;
+
+    &.card {
+        background: transparent;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .card-header {
+        margin-bottom: .4rem;
+        box-sizing: border-box;
+        border-radius: 40px 40px 0 0;
+        display: inherit;
+        justify-content: center;
+
+
+        @media (prefers-color-scheme: dark) {
+            background-color: rgba(31, 44, 78, 0.6);
+            color: white
+        }
+
+        @media (prefers-color-scheme: light) {
+            background-color: rgba(166, 191, 255, 0.6);
+            color: black;
+        }
+
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+        border-bottom: 1px solid rgba(0, 0, 0, .125);
+
+        h5 {
+            color: var(--color-secondary);
+            display: inherit;
+            align-items: center;
+
+            i {
+                color: var(--color-secondary);
+                display: inherit;
+                align-items: center;
+                margin-right: .6rem;
+                transition: rotate ease-in-out .6s;
+
+                &:hover {
+                    rotate: 180deg;
+                }
+            }
+        }
+    }
+
+    [data-widget=hydaria_discord_widget] {
+        .hydaria-content {
+            padding: 15px;
+            border-radius: 0 0 40px 40px;
+            box-sizing: border-box;
+
+            @media (prefers-color-scheme: dark) {
+                background-color: rgba(31, 44, 78, 0.6);
+                color: white
+            }
+
+            @media (prefers-color-scheme: light) {
+                background-color: rgba(166, 191, 255, 0.6);
+                color: black;
+            }
+
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+
+            .hydaria-Discordusers {
+                height: 200px;
+                overflow: auto;
+
+                .hydaria-discordUser {
+                    align-items: center;
+                    display: flex;
+                    padding: .6rem;
+
+                    + .hydaria-discordUser {
+                        border-top: 1px solid black;
+                    }
+
+                    .hydaria-userImg {
+                        background: rgba(0, 0, 0, .149) no-repeat 50%/cover;
+                        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+                        border-radius: 5px;
+                        display: inline-block;
+                        height: 20px;
+                        margin-right: 10px;
+                        position: relative;
+                        width: 20px;
+
+                        .hydaria-userStatus {
+                            border-radius: 50%;
+                            display: block;
+                            height: 8px;
+                            left: auto;
+                            position: absolute;
+                            right: -5px;
+                            top: -5px;
+                            width: 8px;
+                        }
+
+                        .hydaria-status-online {
+                            background: green;
+                        }
+
+                        .hydaria-status-dnd {
+                            background: red;
+                        }
+                    }
+
+                    .hydaria-username {
+                        font-size: 13px;
+                        font-weight: 600;
+                        opacity: .8;
+                    }
+                }
+            }
+
+            .hydaria-Discordinfo {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+
+                .hydaria-js--Discordcount {
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

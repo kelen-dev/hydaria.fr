@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Détails de l'article :
+   ========================================================================== */
+#post-show {
+    h1 {
+        text-align: center;
+    }
+
+    .title-separator {
+        opacity: 1;
+        margin: 0 auto;
+        width: 4rem;
+        border: 2px solid var(--color-primary);
+        border-radius: 40px;
+    }
+
+    .post-banner {
+        min-height: 400px;
+        width: fit-content;
+    }
+
+    .btn-love {
+
+        .bi-heart,
+        .bi-heart-fill {
+            color: red;
+        }
+    }
+}
+
+/* ==========================================================================
+   Liste des articles :
+   ========================================================================== */
+#p-posts,
+#posts-by-tag {
+    .container {
+        .card {
+            border: none;
+            background: transparent;
+
+            .card-body {
+                padding: .6rem;
+                border: black 2px solid;
+
+                @media (prefers-color-scheme: dark) {
+                    background-color: var(--background-color);
+                    color: white
+                }
+
+                @media (prefers-color-scheme: light) {
+                    background-color: var(--light-background-color);
+                    color: black;
+                }
+            }
+
+            .card-footer {
+                @media (prefers-color-scheme: dark) {
+                    color: white;
+                    background: #0a0f1b;
+                }
+
+                @media (prefers-color-scheme: light) {
+                    color: black;
+                    background: #a6bfff;
+                }
+            }
+        }
+    }
+}

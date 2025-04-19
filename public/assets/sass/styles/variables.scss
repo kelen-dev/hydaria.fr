@@ -1,0 +1,23 @@
+$background-color: #101728;
+$light-background-color: #798bb9;
+$background-gradient: linear-gradient(160deg, var(--primary-color) 0%, var(--secondary-color) 99%);
+$rose: #ff398e;
+$purple: #6728CE;
+$grey: #ffddf4;
+$facebook-color: #273c75;
+$twitter-x-color: white;
+$instagram-color: #ff0076;
+$discord-color: #5865F2;
+
+:root {
+    --light-background-color: #{$light-background-color};
+    --background-color: #{$background-color};
+    --primary-color: #{$rose};
+    --secondary-color: #{$purple};
+    --grey-color: #{$grey};
+    --background-gradient: #{$background-gradient};
+    --facebook-color: #{$facebook-color};
+    --twitter-x-color: #{$twitter-x-color};
+    --instagram-color: #{$instagram-color};
+    --discord-color: #{$discord-color};
+}

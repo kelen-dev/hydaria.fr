@@ -1,0 +1,193 @@
+#p-bountyfac {
+    section {
+        padding: 0;
+    }
+
+    /* ==========================================================================
+        Section résumé:
+   ========================================================================== */
+    #summary {
+        article {
+            padding: 2rem 0 2rem 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .container {
+                @include title;
+
+                .wrapper {
+                    place-items: center;
+
+                    img {
+                        object-fit: contain;
+                    }
+
+                    h3 {
+                        @media (prefers-color-scheme: dark) {
+                            color: white;
+                        }
+
+                        @media (prefers-color-scheme: light) {
+                            color: black;
+                        }
+
+                        margin-bottom: .4rem;
+                    }
+
+                    p {
+                        text-align: justify;
+
+                        +h3 {
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+
+            &#avantages {
+                @media (prefers-color-scheme: dark) {
+                    background: #0a0f1b;
+                }
+
+                @media (prefers-color-scheme: light) {
+                    background: #a6bfff;
+                }
+            }
+        }
+
+        .skills-project {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: .4rem;
+
+            @media (prefers-color-scheme: dark) {
+                color: white;
+                background: #0a0f1b;
+            }
+
+            @media (prefers-color-scheme: light) {
+                color: black;
+                background: #a6bfff;
+            }
+
+            .container {
+                display: inherit;
+                justify-content: center;
+            }
+
+            .carousel {
+                min-width: 300px;
+                width: 900px;
+                overflow: hidden;
+                position: relative;
+                white-space: nowrap;
+
+                ul {
+                    display: flex;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    animation: transform .6s ease-in-out infinite alternate;
+
+                    li {
+                        display: inherit;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-right: .4rem;
+                        padding: 0;
+                        margin-bottom: 1%;
+                        min-width: 300px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        span {
+                            border-radius: 20px;
+                            padding: .6rem;
+                            text-align: center;
+                            vertical-align: middle;
+                            font-weight: 900;
+                            line-height: 0;
+                            width: fit-content;
+
+                            @media (prefers-color-scheme: dark) {
+                                color: white;
+                            }
+
+                            @media (prefers-color-scheme: light) {
+                                color: black;
+                            }
+
+                            &:hover {
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        /* ==========================================================================
+            Responsive:
+        ========================================================================== */
+        @media screen and (min-width: 2500px) {
+            article {
+
+                &#qu-est-ce-que-c-est,
+                &#un-site {
+                    .text-right-part {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                }
+
+                &#avantages {
+                    .text-left-part {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 620px) {
+            .skills-project {
+                flex-wrap: wrap;
+
+                ul {
+                    li {
+                        padding-bottom: .6rem;
+
+                        &:last-child {
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            article {
+
+                &#qu-est-ce-que-c-est,
+                &#avantages,
+                &#un-site {
+                    .container {
+                        .wrapper {
+                            img {
+                                height: max-content;
+                                display: table-cell;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

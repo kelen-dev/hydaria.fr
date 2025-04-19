@@ -1,0 +1,77 @@
+#error-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (prefers-color-scheme: dark) {
+        background: linear-gradient(135deg, transparent, transparent 21%, #151618 0, #151618 48%, transparent 0, transparent 95%, #111114 0, #111114),
+            linear-gradient(45deg, transparent, transparent 6%, #101114 0, #101114 13%, #26272d 0, #26272d 32%, transparent 0, transparent),
+            linear-gradient(90deg, #17181c, #17181c);
+    }
+
+    @media (prefers-color-scheme: light) {
+        background: linear-gradient(135deg, transparent, transparent 21%, #d2b9d8 0, #d2b9d8 48%, transparent 0, transparent 95%, #e7c9ee 0, #e7c9ee), linear-gradient(45deg, transparent, transparent 6%, #e6c9ee 0, #e6c9ee 13%, #c3afcc 0, #c3afcc 32%, transparent 0, transparent), linear-gradient(90deg, #e3c8f5, #e3c8f5);
+    }
+
+    #app {
+        main {
+            position: relative;
+
+            h1 {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: clamp(-26rem, -10vw, -8rem);
+                font-size: clamp(10rem, 10vw, 30rem);
+
+                @media (prefers-color-scheme: dark) {
+                    background: -webkit-linear-gradient(left, white 0, var(--color-primary) 100%);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                @media (prefers-color-scheme: light) {
+                    background: -webkit-linear-gradient(left, black 0, var(--color-primary) 100%);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+
+            #error {
+                justify-content: center;
+
+                .card {
+                    @media (prefers-color-scheme: dark) {
+                        color: white;
+                        background: rgba(10, 15, 27, 0.4);
+                    }
+
+                    @media (prefers-color-scheme: light) {
+                        color: black;
+                        background: rgba(166, 191, 255, 0.4);
+                    }
+
+                    border-radius: 40px;
+                    border: 2px solid black;
+                    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+                    -webkit-backdrop-filter: blur(10px);
+                    backdrop-filter: blur(10px);
+
+                    .card-body,
+                    .card-footer {
+                        text-align: center;
+                    }
+
+                    .card-body {
+                        h2 {
+                            color: transparent;
+                            -webkit-text-stroke: 2px var(--color-primary);
+                            text-shadow: 0 0 5px rgba(106, 13, 173, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
